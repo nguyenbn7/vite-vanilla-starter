@@ -12,7 +12,9 @@
     "moduleResolution": "Bundler",
     "module": "ESNext",
     "target": "ESNext",
-    "noEmit": true
+    "noEmit": true,
+    "types": ["./node_modules/vite/client.d.ts"]
   },
-  "exclude": ["node_modules/**"]
+  "include": ["ambient.d.ts", "./src/**/*.js", "./src/**/*.ts", "./vite.config.js"],
+  "exclude": ["./node_modules/**", "./dist/**"]
 }
